@@ -8,9 +8,21 @@
     tools:context=".MainActivity">
 
     <fragment
+        class="ibodov.smile.workout.WorkoutListFragment"
+        android:layout_height="match_parent"
+        android:id="@+id/list_frag"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+
+        tools:ignore="MissingConstraints" />
+
+
+    <fragment
         class="ibodov.smile.workout.WorkoutDetailFragment"
         android:id="@+id/detail_frag"
         android:layout_width="match_parent"
+        
         android:layout_height="match_parent" />
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
